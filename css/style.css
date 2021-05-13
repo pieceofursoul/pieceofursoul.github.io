@@ -535,6 +535,160 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/*Section contact*/
+
+.section_contact {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.section_contact:after {
+  content: "";
+  color: #fff;
+  display: block;
+  width: 196px;
+  height: 3px;
+  margin: 0px 0px 56px;
+  background-color: #fff;
+}
+
+.message{
+   display: flex;
+   position: relative;
+
+}
+
+.message_item  {
+
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 20px 20px;
+    border: 2px solid #ccc;
+
+}
+
+.contact {
+  text-align: center;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 10px 10px;
+}
+
+
+
+/*Button*/
+.butn {
+  position: inherit;
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 40px;
+
+  margin: 20px 20px;
+
+  border: 3px solid #fff;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000;
+  transition: background 0.1s;
+  linear, color 0.1s;
+}
+
+.butn:hover {
+     background-color: #f9cc41;
+       border: 3px solid #f9cc41;
+     color: #000;
+}
+
+
+/*Slider*/
+
+.slider {
+  width: 100%;
+}
+
+.slider_item {
+  border: 1px solid #e5e5e5;
+}
+
+.slider_item.active
+.slider_content {
+  display: block;
+}
+
+
+.slider_item.active
+.slider_header:after {
+    border-bottom-color: #e5e5e5;
+}
+
+.slider_item.active
+.slider_header:after {
+  transform: translateY(-50%)
+  rotate(-45deg);
+  margin-top: 5px;
+}
+
+.slider_header {
+  padding: 15px 20px 15px 60px;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.slider_header:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -5px;
+  z-index: 1;
+  transform: translateY(-50%)
+  rotate(135deg);
+}
+
+.slider_icon{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 1;
+
+  transform: translateY(-50%);
+}
+
+.slider_content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+   padding: 15px 20px;
+   display: none;
+   font-size: 15px;
+   color: #ccc;
+   font-weight: 300;
+}
+
+.slider_title {
+   font-size: 14px;
+   color: #fff;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+
 /* Footer */
 .footer {
   background-color: #000;
