@@ -195,7 +195,69 @@
   </div> <!--/.container -->
 </section>
 
+<!--/. bd -->
+<section class="section" id="feedback" style="background-color: black;">
+   <div class="container">
+      <div class="section_header">
 
+    <div id="feedback--intro" style="cursor: pointer;">
+        <p class="butn"> Вы можете оставить свое сообщения для меня здесь</p>
+    </div>
+
+    <div id="feedback--wrapper" style="display: none;">
+        <form id="feedback_form">
+            <div class="bd">
+                <label class="description" for="feedback_form--name">Имя</label>
+                <input id="feedback_form--name" name="name" type="text" maxlength="255" value=""/>
+            </div>
+            <div class="bd">
+                <label class="description" for="feedback_form--body">Сообщение </label>
+                <textarea id="feedback_form--body" name="body"></textarea>
+            </div>
+
+            <div class="slider">
+                <div class="slider_item" data-collapse="#slider">
+                  <div class="slider_header">
+                            <img class="slider_icon" src="images/digital/mail.png" alt="">
+                            <div class="slider_title"> Напишите свои контактные данные и я с вами свяжусь</div>
+                  </div>
+                  <div class="slider_content" id="slider">
+                          <p>
+                             𓁿 Данная форма предназначена для обратной связи, анонимных отзывов и впечатлений 𓁿</p>
+                          <p>
+                              Также вы можете оставить контактные данные для связи в данном сообщении.<br>
+                              Это может быть ваша почта или ссылка на социальную сеть.</p>
+                          <p>
+                            По вопросам сотрудничества можно писать напрямую на почту pieceofursoul@mail.ru <br>
+                            Если я не отвечаю 3 дня, пожалуйста напишите снова!
+                            <br>
+                            Буду рада вашему письму!
+
+                          </p>
+                          <p>
+                            Do not forget to leave your name, blog URL and contact email or phone.<br>
+
+                            Please report us about any inconvenience or errors to our contact email pieceofursoul@mail.ru.<br>
+                          </p>
+
+                          <p> Best regards,<br> 𓁿 PIECEOFURSOUL 𓁿 </p>
+
+                  </div>
+                </div>    <!--/.slider_item -->
+            </div>   <!--/.slider -->
+
+            <div>
+                <input class="butn" id="feedback_form--submit" type="submit" name="submit" value="Отправить" />
+            </div>
+        </form>
+    </div>
+    </div> <!--/.section_header-->
+  </div>
+</section>
+<!--/. bd-->
+
+	 
+	 
 
 <!--/.Digital -->
 
@@ -258,10 +320,14 @@
     </div>
     <div class="copyright"> © Pieceofursoul, 2021 </div>
 </div> <!--/. footer social icons-->
-
+	 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/firebase.js"></script>	 
 
  </body>
 </html>
