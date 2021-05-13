@@ -192,7 +192,27 @@
   </div> <!--/.container -->
 </section>
 
+<section class="section" id="feedback" style="background-color: white;">
+    <div id="feedback--intro" style="cursor: pointer;">
+        <p>Вы можете оставить свое сообщения для меня здесь</p>
+    </div>
 
+    <div id="feedback--wrapper" style="display: none;">
+        <form id="feedback_form">
+            <div>
+                <label class="description" for="feedback_form--name">Имя</label>
+                <input id="feedback_form--name" name="name" type="text" maxlength="255" value=""/>
+            </div>
+            <div>
+                <label class="description" for="feedback_form--body">Сообщение </label>
+                <textarea id="feedback_form--body" name="body"></textarea>
+            </div>
+            <div>
+                <input id="feedback_form--submit" type="submit" name="submit" value="Отправить" />
+            </div>
+        </form>
+    </div>
+</section>
 
 <!--/.Digital -->
 
@@ -255,9 +275,13 @@
     <div class="copyright"> © Pieceofursoul, 2021 </div>
 </div> <!--/. footer social icons-->
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/firebase.js"></script>
 
  </body>
 </html>
