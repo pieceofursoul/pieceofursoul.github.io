@@ -20,7 +20,6 @@ $(function() {
     // Проверяем поля на наличие в них данных.
     function validateFormField(id) {
         let value = $("#" + id).val();
-        console.log(value);
         if (!value) {
             let title = $("label[for='" + id + "']").text();
             alert('Введите, пожалуйста, ' + title);
