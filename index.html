@@ -93,7 +93,6 @@
             <h3 class="section_work">Работы</h3>
 
             <div class="work">
-
                 <div class="work_block">
                     <div class="work_img">
                         <img src="images/work/1.jpg" alt="">
@@ -116,7 +115,6 @@
             </div>
 
             <div class="work">
-
                 <div class="work_block">
                     <div class="work_img">
                         <img src="images/work/3.jpg" alt="">
@@ -136,11 +134,9 @@
                         <p>40 × 30 мм<br>холст, масло</p>
                     </div>
                 </div>
-
             </div>
 
             <div class="work">
-
                 <div class="work_block">
                     <div class="work_img">
                         <img src="images/work/5.jpg" alt="">
@@ -151,7 +147,6 @@
                     </div>
                 </div>
 
-
                 <div class="work_block">
                     <div class="work_img">
                         <img src="images/work/6.jpg" alt="">
@@ -161,7 +156,32 @@
                         <p>15 × 15 мм<br>  холст на картоне, масло</p>
                     </div>
                 </div>
+            </div>
 
+            <div class="work">
+                <div class="work_block shop--item" data-item-id="picture-1">
+                    <div class="work_img">
+                        <img src="images/work/5.jpg" alt="">
+                    </div>
+                    <div class="work_text">
+                        <p class="shop--item--title">Буря</p>
+                        <p>14 × 19 мм<br> картон укрепленный, масло</p>
+                    </div>
+                    <div class="shop--item--price"><span class="shop--item--price--value">10000</span> руб.</div>
+                    <div class="shop--item--buy">Купить</div>
+                </div>
+
+                <div class="work_block shop--item" data-item-id="picture-2">
+                    <div class="work_img">
+                        <img src="images/work/6.jpg" alt="">
+                    </div>
+                    <div class="work_text">
+                        <p class="shop--item--title">Зеркало</p>
+                        <p>15 × 15 мм<br>  холст на картоне, масло</p>
+                    </div>
+                    <div class="shop--item--price"><span class="shop--item--price--value">20000</span> руб.</div>
+                    <div class="shop--item--buy">Купить</div>
+                </div>
             </div>
         </div>
 
@@ -252,8 +272,16 @@
 </section>
 <!--/. bd-->
 
-<!--/.Digital -->
+<section class="section" id="shop--order" style="display:none;">
+    <div class="container">
+        <div class="section_header">
+            <h3>Ваш заказ</h3>
+            <div id="shop--order--list"></div>
+        </div>
+    </div>
+</section>
 
+<!--/.Digital -->
 <section class="section">
 
     <div class="digital">
@@ -312,6 +340,11 @@
     <div class="copyright"> © Pieceofursoul, 2021 </div>
 </div> <!--/. footer social icons-->
 
+<!--/.Shop cart -->
+<div id="shop--cart" style="display: none;">
+    <div id="shop--cart--title">Корзина</div>
+    <div id="shop--cart--count">0</div>
+</div>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
@@ -319,6 +352,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/firebase.js"></script>
-
+<script src="js/shop.js"></script>
 </body>
 </html>
