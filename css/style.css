@@ -467,7 +467,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px auto;
   width: 50%;
   position: relative;
-  background-color: #000;
 }
 
 .bd_item {
@@ -693,7 +692,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#shop--cart {
+#shop--cart{
   position: fixed;
   z-index: 1000;
   bottom: 50px;
@@ -704,15 +703,24 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 
-#shop--cart--count {
+#shop--cart--count{
   font-size: 30px;
   font-weight: bold;
   color: red;
   text-align: center;
+  cursor: pointer;
 }
 
-#shop--order {
-  background-color: white;
+#shop--order{
+  background-color: red;
+}
+
+.shop--item--buy {
+  cursor: pointer;
+}
+
+.shop--order--list-item-remove{
+  cursor: pointer;
 }
 
 @media(max-width: 1230px) {
