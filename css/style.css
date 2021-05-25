@@ -741,7 +741,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #shop--order{
-  background: linear-gradient(to bottom, #96d5ff, #000);
+  background: linear-gradient(to bottom, #96d5ff, #bd0202, #000);
 }
 
 .shop--item--price{
@@ -766,6 +766,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .shop--order--list-item-remove{
   cursor: pointer;
+  font-size: 10px;
+  color: #fff;
+  padding-left:  50%;
+  font-weight: 400;
+
 }
 
 @media(max-width: 1230px) {
