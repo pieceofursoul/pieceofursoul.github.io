@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   line-height: 1.6;
-  color: #333;
+  color: #000;
   background-color: #000;
 }
 
@@ -413,7 +413,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .work_img {
   background: linear-gradient(to bottom, #000, #bd0202);
-
   transition: transform 0.2s linear;
 }
 
@@ -457,6 +456,27 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px;
   margin: 0px 0px 56px;
   background-color: #fff;
+}
+
+.vr {
+  margin: 60px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vr_block {
+  width: 100%;
+  margin: 0px 0px;
+  display: block;
+  height: auto;
+  position: relative;
+}
+
+.vr_tur {
+  width: 960px;
+  display: block;
+  max-width: 100%;
 }
 
 /* new bd */
@@ -697,14 +717,21 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1000;
   bottom: 50px;
   right: 50px;
-  background-color: white;
+  background-color: black;
   width: 100px;
   height: 100px;
   padding: 20px;
 }
 
+#shop--cart--title{
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 #shop--cart--count{
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   color: red;
   text-align: center;
@@ -712,11 +739,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #shop--order{
-  background-color: red;
+  background-color: linear-gradient(to bottom, #96d5ff, #000);
 }
 
-.shop--item--buy {
+.shop--item--price{
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  background: #000;
+  padding: 5px;
+}
+
+.shop--item--buy{
   cursor: pointer;
+     font-size: 16px;
+   color: #bd0202;
+   text-transform: uppercase;
+   font-weight: 700;
+   text-align: center;
+   background: #000;
 }
 
 .shop--order--list-item-remove{
@@ -727,7 +770,6 @@ h1, h2, h3, h4, h5, h6 {
   body {
     background: #000;
   }
-
   /*Intro*/
   .intro_title{
     font-size: 30px;
@@ -761,6 +803,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: 15px;
   }
 
+    /*VR*/
+  .vr_tur {
+    width: 640px;
+    height: 480px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
   /*Digital*/
 
   .digital {
@@ -778,6 +829,7 @@ h1, h2, h3, h4, h5, h6 {
   /*Header*/
   .header{
     padding: 10px 0;
+    margin: 0px;
   }
 
   /*Intro*/
