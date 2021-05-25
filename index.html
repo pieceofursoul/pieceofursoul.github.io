@@ -115,51 +115,7 @@
             </div>
 
             <div class="work">
-                <div class="work_block">
-                    <div class="work_img">
-                        <img src="images/work/3.jpg" alt="">
-                    </div>
-                    <div class="work_text">
-                        <p>Око</p>
-                        <p>29 × 29 мм<br> Укрепленный картон, масло</p>
-                    </div>
-                </div>
-
-                <div class="work_block">
-                    <div class="work_img">
-                        <img src="images/work/4.jpg" alt="">
-                    </div>
-                    <div class="work_text">
-                        <p>Цельность</p>
-                        <p>40 × 30 мм<br>холст, масло</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="work_block">
-                    <div class="work_img">
-                        <img src="images/work/5.jpg" alt="">
-                    </div>
-                    <div class="work_text">
-                        <p>Буря</p>
-                        <p>14 × 19 мм<br> картон укрепленный, масло</p>
-                    </div>
-                </div>
-
-                <div class="work_block">
-                    <div class="work_img">
-                        <img src="images/work/6.jpg" alt="">
-                    </div>
-                    <div class="work_text">
-                        <p>Зеркало</p>
-                        <p>15 × 15 мм<br>  холст на картоне, масло</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="work">
-                <!--
+                  <!--
                    .shop--item - обертка для товара;
                    data-item-id - устанавливает номер товара;
                    .shop--item--title - название товара;
@@ -168,17 +124,43 @@
                 -->
                 <div class="work_block shop--item" data-item-id="picture-1">
                     <div class="work_img">
+                        <img src="images/work/3.jpg" alt="">
+                    </div>
+                    <div class="work_text">
+                        <p class="shop--item--title">Око</p>
+                        <p>29 × 29 мм<br> Укрепленный картон, масло</p>
+                    </div>
+                      <div class="shop--item--price"><span class="shop--item--price--value">20 000</span> ₽</div>
+                      <div class="shop--item--buy">Купить</div>
+                </div>
+
+                <div class="work_block shop--item" data-item-id="picture-2">
+                    <div class="work_img">
+                        <img src="images/work/4.jpg" alt="">
+                    </div>
+                    <div class="work_text">
+                        <p class="shop--item--title">Цельность</p>
+                        <p>40 × 30 мм<br>холст, масло</p>
+                    </div>
+                      <div class="shop--item--price"><span class="shop--item--price--value">40 000</span> ₽</div>
+                      <div class="shop--item--buy">Купить</div>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work_block shop--item" data-item-id="picture-3">
+                    <div class="work_img">
                         <img src="images/work/5.jpg" alt="">
                     </div>
                     <div class="work_text">
                         <p class="shop--item--title">Буря</p>
                         <p>14 × 19 мм<br> картон укрепленный, масло</p>
                     </div>
-                    <div class="shop--item--price"><span class="shop--item--price--value">10000</span> руб.</div>
-                    <div class="shop--item--buy">Купить</div>
+                      <div class="shop--item--price"><span class="shop--item--price--value">10 000</span> ₽</div>
+                      <div class="shop--item--buy">Купить</div>
                 </div>
 
-                <div class="work_block shop--item" data-item-id="picture-2">
+                <div class="work_block shop--item" data-item-id="picture-4">
                     <div class="work_img">
                         <img src="images/work/6.jpg" alt="">
                     </div>
@@ -186,12 +168,11 @@
                         <p class="shop--item--title">Зеркало</p>
                         <p>15 × 15 мм<br>  холст на картоне, масло</p>
                     </div>
-                    <div class="shop--item--price"><span class="shop--item--price--value">20000</span> руб.</div>
-                    <div class="shop--item--buy">Купить</div>
+                         <div class="shop--item--price"><span class="shop--item--price--value">20 000</span> ₽</div>
+                         <div class="shop--item--buy">Купить</div>
                 </div>
-            </div>
+            </div>   
         </div>
-
     </div> <!--/.container -->
 </section>
 
@@ -202,14 +183,12 @@
         <div class="section_header">
             <h3 class="section_vr">Виртуальный тур</h3>
 
-            <div class="work">
+            <div class="vr">
 
-                <div class="work_block">
-
-                    <div class="work_img">  <img src="images/vr.jpg"  alt=""></div>
-                    <div class="work_text">
+                <div class="vr_block">
+                    <div class="vr_tur">
                         <iframe width="640px" height="480px" src="https://poly.google.com/view/aD8qKX_hl-m/embed?chrome=min" frameborder="0" style="border:none;" allowvr="yes" allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" ></iframe>
-                    </div>
+                    </div>   
                 </div>
 
             </div>
@@ -278,7 +257,7 @@
     </div>
 </section>
 <!--/. bd-->
-
+<!--/. shop-->
 <section class="section" id="shop--order" style="display:none;">
     <div class="container">
         <div class="section_header">
@@ -291,7 +270,7 @@
                     <input id="shop--order-form--name" name="name" type="text" maxlength="255" value=""/>
                 </div>
                 <div class="bd">
-                    <label class="description" for="shop--order-form--mail">Емэйл</label>
+                    <label class="description" for="shop--order-form--mail">Email</label>
                     <input id="shop--order-form--mail" name="mail" type="email" maxlength="255" value=""/>
                 </div>
                 <div class="bd">
